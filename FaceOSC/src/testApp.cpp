@@ -104,7 +104,6 @@ void testApp::setup() {
 	ofSetVerticalSync(true);
 #ifdef TARGET_OSX
 	ofSetDataPathRoot("../Resources/data/");
-    syphonServer.setName("FaceOSC Camera");
 #endif
 	loadSettings();
 }
@@ -208,7 +207,6 @@ void testApp::draw() {
 	videoSource->draw(0, 0);
     
 #ifdef TARGET_OSX
-    syphonServer.publishScreen();
 #endif
 
 
